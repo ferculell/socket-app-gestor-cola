@@ -23,7 +23,7 @@ socket.on('ultimo-ticket', (payload) => {
 
 btnCrear.addEventListener( 'click', () => {
     
-    socket.emit( 'siguiente-ticket', null, ( ticket ) => {
+    socket.emit('siguiente-ticket', null, ( ticket ) => {
         lblNuevoTicket.innerText = ticket;
     });
 
